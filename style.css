@@ -1,0 +1,9 @@
+        .gradient-glow {
+            background: radial-gradient(circle at 50% 20%, rgba(0, 163, 172, 0.25) 0%, rgba(11, 25, 30, 0) 70%);
+        }
+
+        .circuit-pattern {
+            background-image: radial-gradient(#00878f 0.75px, transparent 0.75px);
+            background-size: 24px 24px;
+            opacity: 0.15;
+        }

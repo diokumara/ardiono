@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ardiono - Unduh & Panduan Install Arduino IDE</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body class="bg-arduino-darkbg text-gray-100 font-sans antialiased selection:bg-arduino selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-arduino-darkbg/80 border-b border-arduino-dark/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-xl bg-arduino flex items-center justify-center text-white shadow-lg shadow-arduino/30 font-bold text-xl">
+                        <i class="fa-solid fa-infinity"></i>
+                    </div>
+                    <span class="font-extrabold text-xl tracking-tight text-white">Ar<span class="text-arduino-light">dio</span>no<span class="text-arduino-light"></span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="#hero" class="text-gray-300 hover:text-arduino-light transition">Beranda</a>
+                    <a href="#download" class="text-gray-300 hover:text-arduino-light transition">Download</a>
+                    <a href="#os-options" class="text-gray-300 hover:text-arduino-light transition">Pilihan OS</a>
+                    <a href="#installation" class="text-gray-300 hover:text-arduino-light transition">Cara Install</a>
+                    <a href="#simulator" class="text-gray-300 hover:text-arduino-light transition">Simulasi Board</a>
+                </div>
+
+                <div>
+                    <a href="http://www.arduino.cc/en/software" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 bg-arduino hover:bg-arduino-light text-white text-sm font-semibold px-4 py-2 rounded-lg transition-all duration-300 shadow-md shadow-arduino/20 hover:scale-105">
+                        <i class="fa-solid fa-download"></i> Unduh Arduino IDE
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28 gradient-glow">
+        <div class="absolute inset-0 circuit-pattern pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-arduino/10 border border-arduino/30 text-arduino-light text-xs sm:text-sm font-medium mb-6">
+                    <span class="flex h-2 w-2 rounded-full bg-arduino-light animate-ping"></span>
+                    Versi Terbaru Arduino IDE 2.x Tersedia
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+                    Panduan dasar Instalasi <span class="text-transparent bg-clip-text bg-gradient-to-r from-arduino-light via-teal-300 to-emerald-400">Arduino IDE</span> <br> Kelas Teknologi SMP Inovasi
+                </h1>
+                <p class="text-base sm:text-lg text-gray-300 mb-8 leading-relaxed">
+                    Install Arduino IDE di laptop kalian dengan mengklik tombol di pojok kanan atas atau pilih sistem operasi kalian di bawah ini. Ikuti panduan langkah demi langkah untuk memastikan board Arduino Nano/Uno kalian dapat terhubung dengan baik.
+                </p>
+                
+                <div id="download" class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="https://www.arduino.cc/en/software" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-arduino to-arduino-light hover:from-arduino-light hover:to-teal-400 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-xl shadow-arduino/30 transition-all duration-300 hover:scale-105 group">
+                        <i class="fa-solid fa-download text-xl group-hover:bounce"></i>
+                        <span>Download Arduino IDE</span>
+                    </a>
+                    <a href="#installation" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-arduino-cardbg hover:bg-gray-800 text-gray-200 font-semibold text-lg px-6 py-4 rounded-xl border border-gray-700 hover:border-arduino/50 transition-all duration-300">
+                        <i class="fa-solid fa-book-open text-arduino-light"></i>
+                        <span>Lihat Panduan</span>
+                    </a>
+                </div>
+
+                <p class="text-xs text-gray-400 mt-4 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-shield-halved text-arduino-light"></i> 100% Bebas Virus & Gratis (Open Source)
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- OS Selection Section -->
+    <section id="os-options" class="py-16 bg-arduino-cardbg/50 border-y border-arduino-dark/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white mb-3">Pilih Sistem Operasi Kamu</h2>
+                <p class="text-gray-400 max-w-xl mx-auto">Arduino IDE mendukung berbagai sistem operasi. Klik sesuai OS kalian untuk langsung menuju opsi yang sesuai.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Windows Card -->
+                <div class="bg-arduino-cardbg p-6 rounded-2xl border border-gray-800 hover:border-arduino/50 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition">
+                            <i class="fa-brands fa-windows"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Windows</h3>
+                        <p class="text-sm text-gray-400 mb-4">Windows 10 / 11 (64-bit). File installer resmi format .exe atau versi ZIP Portable.</p>
+                        <ul class="text-xs text-gray-300 space-y-2 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-arduino-light"></i> Windows Win10/Win11 Installer</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-arduino-light"></i> MSI / Zip file support</li>
+                        </ul>
+                    </div>
+                    <a href="https://www.arduino.cc/en/software" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-lg bg-gray-800 hover:bg-arduino text-white font-semibold text-sm flex items-center justify-center gap-2 transition">
+                        <span>Download untuk Windows</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- macOS Card -->
+                <div class="bg-arduino-cardbg p-6 rounded-2xl border border-gray-800 hover:border-arduino/50 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition">
+                            <i class="fa-brands fa-apple"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">macOS</h3>
+                        <p class="text-sm text-gray-400 mb-4">Mendukung macOS 10.14 (Mojave) ke atas. Kompatibel dengan Apple Silicon & Intel.</p>
+                        <ul class="text-xs text-gray-300 space-y-2 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-arduino-light"></i> Intel Processor (64-bit)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-arduino-light"></i> Apple Silicon (M1/M2/M3)</li>
+                        </ul>
+                    </div>
+                    <a href="https://www.arduino.cc/en/software" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-lg bg-gray-800 hover:bg-arduino text-white font-semibold text-sm flex items-center justify-center gap-2 transition">
+                        <span>Download untuk macOS</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Linux Card -->
+                <div class="bg-arduino-cardbg p-6 rounded-2xl border border-gray-800 hover:border-arduino/50 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition">
+                            <i class="fa-brands fa-linux"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Linux</h3>
+                        <p class="text-sm text-gray-400 mb-4">Tersedia format AppImage 64-bit yang praktis tanpa perlu kompilasi ulang.</p>
+                        <ul class="text-xs text-gray-300 space-y-2 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-arduino-light"></i> Linux AppImage 64-bit</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-arduino-light"></i> Linux ZIP Archive</li>
+                        </ul>
+                    </div>
+                    <a href="https://www.arduino.cc/en/software" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-lg bg-gray-800 hover:bg-arduino text-white font-semibold text-sm flex items-center justify-center gap-2 transition">
+                        <span>Download untuk Linux</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Steps Section -->
+    <section id="installation" class="py-16 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-arduino-light font-semibold text-sm tracking-wider uppercase">Panduan Lengkap</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Langkah Demi Langkah Install Arduino IDE</h2>
+                <p class="text-gray-400 mt-2 max-w-2xl mx-auto">Ikuti petunjuk sederhana ini untuk memasang software di perangkat komputer kalian.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Step 1 -->
+                <div class="bg-arduino-cardbg rounded-xl p-6 border border-gray-800 relative">
+                    <div class="w-10 h-10 rounded-full bg-arduino/20 text-arduino-light font-bold flex items-center justify-center mb-4 text-lg border border-arduino/30">
+                        1
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Unduh File Installer</h3>
+                    <p class="text-sm text-gray-400">
+                        Klik tombol download di atas untuk mengunduh berkas resmi dari situs Arduino.cc sesuai OS kalian.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-arduino-cardbg rounded-xl p-6 border border-gray-800 relative">
+                    <div class="w-10 h-10 rounded-full bg-arduino/20 text-arduino-light font-bold flex items-center justify-center mb-4 text-lg border border-arduino/30">
+                        2
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Jalankan Installer</h3>
+                    <p class="text-sm text-gray-400">
+                        Buka berkas `.exe` atau `.dmg` yang telah diunduh. Jika muncul izin keamanan (UAC), pilih "Yes / Allow".
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-arduino-cardbg rounded-xl p-6 border border-gray-800 relative">
+                    <div class="w-10 h-10 rounded-full bg-arduino/20 text-arduino-light font-bold flex items-center justify-center mb-4 text-lg border border-arduino/30">
+                        3
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Persetujuan & Driver</h3>
+                    <p class="text-sm text-gray-400">
+                        Klik "I Agree" lalu centang opsi untuk menginstall Driver USB (Sangat penting agar board terdeteksi).
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="bg-arduino-cardbg rounded-xl p-6 border border-gray-800 relative">
+                    <div class="w-10 h-10 rounded-full bg-arduino/20 text-arduino-light font-bold flex items-center justify-center mb-4 text-lg border border-arduino/30">
+                        4
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Selesai & Siap Pakai</h3>
+                    <p class="text-sm text-gray-400">
+                        Tunggu proses instalasi hingga selesai. Buka Arduino IDE melalui Shortcut Desktop yang telah dibuat.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Board Connection Guide & Simulator -->
+    <section id="simulator" class="py-16 bg-arduino-cardbg/40 border-t border-arduino-dark/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="bg-arduino/20 text-arduino-light text-xs font-semibold px-3 py-1 rounded-full border border-arduino/30">Fitur Interaktif</span>
+                <h2 class="text-3xl font-extrabold text-white mt-3">Simulasi Penggunaan Pertama</h2>
+                <p class="text-gray-400 mt-2">Coba langkah-langkah di bawah untuk mempelajari cara menghubungkan board Arduino pertama kalian!</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <!-- Interactive Steps Panel -->
+                <div class="lg:col-span-5 bg-arduino-cardbg p-6 rounded-2xl border border-gray-800">
+                    <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-list-check text-arduino-light"></i> Check-list Pertama Kali
+                    </h3>
+
+                    <div class="space-y-4">
+                        <!-- Interactive Step 1 -->
+                        <button onclick="setSimStep(1)" id="btn-step-1" class="w-full text-left p-4 rounded-xl border transition-all flex items-start gap-3 bg-arduino/10 border-arduino text-white">
+                            <div class="w-6 h-6 rounded-full bg-arduino text-white text-xs flex items-center justify-center flex-shrink-0 mt-0.5">1</div>
+                            <div>
+                                <h4 class="font-semibold text-sm">Sambungkan Kabel USB</h4>
+                                <p class="text-xs text-gray-400 mt-1">Hubungkan board Arduino UNO kalian ke komputer menggunakan kabel USB A-to-B.</p>
+                            </div>
+                        </button>
+
+                        <!-- Interactive Step 2 -->
+                        <button onclick="setSimStep(2)" id="btn-step-2" class="w-full text-left p-4 rounded-xl border transition-all flex items-start gap-3 bg-gray-800/50 border-gray-700 text-gray-300 hover:border-gray-600">
+                            <div class="w-6 h-6 rounded-full bg-gray-700 text-gray-300 text-xs flex items-center justify-center flex-shrink-0 mt-0.5">2</div>
+                            <div>
+                                <h4 class="font-semibold text-sm">Pilih Board & Port COM</h4>
+                                <p class="text-xs text-gray-400 mt-1">Di Arduino IDE, pilih "Tools > Board > Arduino Uno" dan tentukan COM Port yang sesuai.</p>
+                            </div>
+                        </button>
+
+                        <!-- Interactive Step 3 -->
+                        <button onclick="setSimStep(3)" id="btn-step-3" class="w-full text-left p-4 rounded-xl border transition-all flex items-start gap-3 bg-gray-800/50 border-gray-700 text-gray-300 hover:border-gray-600">
+                            <div class="w-6 h-6 rounded-full bg-gray-700 text-gray-300 text-xs flex items-center justify-center flex-shrink-0 mt-0.5">3</div>
+                            <div>
+                                <h4 class="font-semibold text-sm">Upload Program Blink (Kedip LED)</h4>
+                                <p class="text-xs text-gray-400 mt-1">Buka contoh program "File > Examples > 01.Basics > Blink" lalu tekan tombol Upload (Panah Kanan).</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Simulation Visualizer -->
+                <div class="lg:col-span-7 bg-gray-950 p-6 rounded-2xl border border-gray-800 min-h-[380px] flex flex-col justify-between">
+                    <div class="flex items-center justify-between border-b border-gray-800 pb-3 mb-4">
+                        <div class="flex items-center gap-2">
+                            <span class="w-3 h-3 rounded-full bg-red-500 inline-block"></span>
+                            <span class="w-3 h-3 rounded-full bg-yellow-500 inline-block"></span>
+                            <span class="w-3 h-3 rounded-full bg-green-500 inline-block"></span>
+                            <span class="text-xs font-mono text-gray-400 ml-2">Arduino IDE Monitor Simulator</span>
+                        </div>
+                        <span id="sim-status" class="text-xs font-mono text-arduino-light bg-arduino/10 px-2.5 py-1 rounded border border-arduino/30">
+                            Status: Kabel Terputus
+                        </span>
+                    </div>
+
+                    <!-- Visual Board Box -->
+                    <div class="my-auto flex flex-col items-center justify-center p-6 text-center">
+                        <div class="relative w-64 h-40 bg-teal-800 rounded-lg border-2 border-teal-600 shadow-2xl flex flex-col justify-between p-4 mb-4">
+                            <!-- Board Details -->
+                            <div class="flex justify-between items-center">
+                                <span class="text-[10px] font-bold text-white tracking-widest font-mono">ARDUINO UNO</span>
+                                <div class="flex gap-1">
+                                    <div id="led-pwr" class="w-2 h-2 rounded-full bg-gray-600"></div>
+                                    <span class="text-[8px] text-gray-300">PWR</span>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-between items-center">
+                                <div id="usb-port" class="w-8 h-8 bg-gray-400 rounded-sm border border-gray-200 flex items-center justify-center text-[9px] text-gray-800 font-bold">
+                                    USB
+                                </div>
+                                
+                                <!-- Built-in LED L Pin 13 -->
+                                <div class="flex flex-col items-center">
+                                    <div id="led-l" class="w-4 h-4 rounded-full bg-gray-700 border border-gray-500 transition-all duration-300"></div>
+                                    <span class="text-[9px] text-gray-300 font-mono mt-0.5">LED 13</span>
+                                </div>
+                            </div>
+
+                            <div class="text-[8px] text-teal-200 font-mono text-right">MADE IN ITALY</div>
+                        </div>
+
+                        <!-- Instruction Description -->
+                        <div id="sim-description" class="text-sm text-gray-300 max-w-md">
+                            Klik tombol langkah di sebelah kiri untuk melihat proses simulasi pemasangan board!
+                        </div>
+                    </div>
+
+                    <!-- Interactive Action Button in Visualizer -->
+                    <div class="pt-4 border-t border-gray-800 flex justify-end">
+                        <button id="sim-next-btn" onclick="nextSimStep()" class="bg-arduino hover:bg-arduino-light text-white font-medium text-xs px-4 py-2 rounded-lg transition flex items-center gap-2">
+                            <span>Langkah Selanjutnya</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-arduino-darkbg border-t border-arduino-dark/40 py-12 text-gray-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 rounded-lg bg-arduino flex items-center justify-center text-white font-bold text-sm">
+                        <i class="fa-solid fa-infinity"></i>
+                    </div>
+                    <span class="font-extrabold text-lg text-white">Ar<span class="text-arduino-light">dio</span>no</span>
+                </div>
+
+                <p class="text-xs text-center md:text-left text-gray-500">
+                    Situs ini adalah panduan independen untuk membantu siswa Kelas Teknologi M2M mengunduh software resmi Arduino. Seluruh merek dagang dan hak cipta Arduino dimiliki oleh Arduino AG.
+                </p>
+
+                <div class="flex space-x-6">
+                    <a href="https://www.arduino.cc" target="_blank" rel="noopener noreferrer" class="hover:text-arduino-light transition">Arduino.cc</a>
+                    <a href="https://forum.arduino.cc" target="_blank" rel="noopener noreferrer" class="hover:text-arduino-light transition">Forum Resmi</a>
+                    <a href="https://docs.arduino.cc" target="_blank" rel="noopener noreferrer" class="hover:text-arduino-light transition">Dokumentasi</a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-xs text-gray-600">
+                &copy; 2026 Ardiono - Panduan Installasi Arduino IDE Bahasa Indonesia - made with Gemini AI
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
